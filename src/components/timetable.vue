@@ -7,6 +7,7 @@
       <el-table-column
         prop="time"
         label="Time"
+        width="200"
       >
       </el-table-column>
       <el-table-column

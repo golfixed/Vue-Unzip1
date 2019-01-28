@@ -21,12 +21,9 @@
         </div>
       </div>
       <div class="topic-div">
-        <h2 class="txt-title">
-          What is UNZIP?
-        </h2>
-        <p  class="txt-description">
-          UNZIP is an event which is open for those who interested in sharing their ideas, knowledges or experiences to propose their topics. The proposed topic does not have to be serious or even related to computer or technology things. You can come either as a group or individual. If you want to share something, just come.
-        </p>
+        <section
+          :title="sec1"
+          :description="sec1des"
       </div>
      <div class="topic-div">
         <h2 class="txt-title">
@@ -68,12 +65,22 @@
 <script>
 import navbar from '@/components/navbar'
 import timetable from '@/components/timetable'
+import section from '@/components/section'
 
 export default {
   name: 'App',
   components: {
     navbar,
-    timetable
+    timetable,
+    section
+  },
+  computed: {
+    sec1: function () {
+    return this.$t('message.sec1.title')
+    },
+    sec1des: function () {
+    return this.$t('message.sec1.description')
+    },
   }
 }
 </script>
@@ -136,6 +143,12 @@ export default {
 }
 .regisbtn:active {
   border-color: #DEE3EA !important;
+}
+
+@media (max-width: 425px){
+  .topic-div{
+    padding: 0px 30px 0px 30px !important;
+  }
 }
 .topic-div{
   padding: 0px 100px 0px 100px;
