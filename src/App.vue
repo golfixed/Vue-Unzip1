@@ -56,22 +56,7 @@
         <h2 class="txt-title">
           Time Table
         </h2>
-        <p  class="txt-description">
-              <el-table
-      :data="tableData"
-      style="width: 100%">
-      <el-table-column
-        prop="time"
-        label="Time"
-      >
-      </el-table-column>
-      <el-table-column
-        prop="activity"
-        label="Activity"
-      >
-      </el-table-column>
-    </el-table>
-        </p>
+        <timetable/>
     </div>
 
 
@@ -82,30 +67,14 @@
 
 <script>
 import navbar from '@/components/navbar'
-
+import timetable from '@/components/timetable'
 
 export default {
   name: 'App',
   components: {
-    navbar
-  },
-data() {
-        return {
-          tableData: [{
-            time: '09.00 - 09.30',
-            activity: 'Registration',
-          },
-        {
-            time: '09.30 - 09.50',
-            activity: 'Opening Ceremony',
-        },
-        {
-            time: '09.50 - 11.00',
-            activity: 'Guest Speaker 1-2 ',
-        }
-        ]
-        }
-      }
+    navbar,
+    timetable
+  }
 }
 </script>
 
@@ -121,7 +90,7 @@ data() {
   color: white;
 }
 .txt-description{
-font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   color: #8E87C0;
 }
