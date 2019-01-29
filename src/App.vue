@@ -20,42 +20,45 @@
           </div>
         </div>
       </div>
+
       <div class="topic-div">
-        <section
+        <textdiv
           :title="sec1"
           :description="sec1des"
+        />
       </div>
-     <div class="topic-div">
-        <h2 class="txt-title">
-          Objective
-        </h2>
-        <p  class="txt-description">
-          We want UNZIP to become an idea-sharing space, which everyone can meet and exchange their ideas. They can find and talk to those with similar interests. We also want to stimulate all attendee’s curiosity and their enthusiasm to learn new things.
-        </p>
+      <div class="topic-div">
+        <textdiv
+          :title="sec2"
+          :description="sec2des"
+        />
       </div>
-     <div class="topic-div">
-        <h2 class="txt-title">
-          Want to become a speaker in UNZIP?
-        </h2>
-        <p  class="txt-description">
-          We are accepting proposals for the topic until Feb 26, 2019. The proposed topic must not be contrary to the law or in high risk to become so. The speaker must be able to cover the topic in 25 minutes speaking time. The speaker can speak in either Thai or English. 
-        </p>
+      <div class="topic-div">
+        <textdiv
+          :title="sec3"
+          :description="sec3des"
+        />
       </div>
-     <div class="topic-div">
-        <h2 class="txt-title">
-          Who can attend this event?
-        </h2>
-        <p  class="txt-description">
-          All KMUTT students, staffs and everyone who are interested in this event.
-        </p>
-    </div>
-     <div class="topic-div">
-        <h2 class="txt-title">
-          Time Table
-        </h2>
+      <div class="topic-div">
+        <textdiv
+          :title="sec4"
+          :description="sec4des"
+        />
+      </div>
+      <div class="topic-div">
+        <textdiv
+          :title="sec5"
+        >
+        </textdiv>
         <timetable/>
-    </div>
-
+      </div>
+      <div class="topic-div">
+        <textdiv
+          :title="sec6"
+        >
+        </textdiv>
+        <gmaps/>
+      </div>
 
     </div>
 
@@ -65,14 +68,16 @@
 <script>
 import navbar from '@/components/navbar'
 import timetable from '@/components/timetable'
-import section from '@/components/section'
+import textdiv from '@/components/textdiv'
+import gmaps from '@/components/gmaps'
 
 export default {
   name: 'App',
   components: {
     navbar,
     timetable,
-    section
+    textdiv,
+    gmaps
   },
   computed: {
     sec1: function () {
@@ -80,6 +85,30 @@ export default {
     },
     sec1des: function () {
     return this.$t('message.sec1.description')
+    },
+    sec2: function () {
+    return this.$t('message.sec2.title')
+    },
+    sec2des: function () {
+    return this.$t('message.sec2.description')
+    },
+    sec3: function () {
+    return this.$t('message.sec3.title')
+    },
+    sec3des: function () {
+    return this.$t('message.sec3.description')
+    },
+    sec4: function () {
+    return this.$t('message.sec4.title')
+    },
+    sec4des: function () {
+    return this.$t('message.sec4.description')
+    },
+    sec5: function () {
+    return this.$t('message.sec5.title')
+    },
+    sec6: function () {
+    return this.$t('message.sec6.title')
     },
   }
 }
