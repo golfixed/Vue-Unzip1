@@ -8,7 +8,9 @@ import VueI18n from 'vue-i18n'
 import messages from './locales'
 import 'element-ui/lib/theme-chalk/index.css';
 import * as VueGoogleMaps from "vue2-google-maps";
+var VueScrollTo = require('vue-scrollto');
 
+Vue.use(VueScrollTo)
 Vue.use(VueI18n)
 Vue.config.productionTip = false
 Vue.use(ElementUI);

@@ -1,39 +1,252 @@
 <template>
-  
-  <nav class="nav-div">
+  <div class="header-div" style="position: fixed; z-index: 999;">
+      <div class="container header-cont">
+        <div class="row header-webtitle-div d-flex align-items-center">
+          <div class="col-12 d-flex flex-row align-items-center header-div-padding">
+            <div class="row navbar-div d-flex justify-content-center">
+              <div class="container d-flex align-items-center justify-content-center">
+                <nav :class="[{'show': hamburger}, 'nav-display']">
+                  <ul id="navbar-nav">
+                    <li class="active">
+                      <a href="#" v-scroll-to="'#regis'">{{ $t("message.navbar.regis") }}</a>
+                    </li>
+                    <li class="active">
+                      <a href="#" v-scroll-to="'#timetable'">{{ $t("message.navbar.col1") }}</a>
+                    </li>
+                    <li>
+                      <a href="#" v-scroll-to="'#location'">{{ $t("message.navbar.col2") }}</a>
+                    </li>
+                    <li>
+                      <a href="#" v-scroll-to="'#sponsors'">{{ $t("message.navbar.col3") }}</a>
+                    </li>
+                    <li>
+                      <a href="#" v-scroll-to="'#faq'">{{ $t("message.navbar.col4") }}</a>
+                    </li>
+                    <li>
+                      <a href="#" v-scroll-to="'#contactus'">{{ $t("message.navbar.col5") }}</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <form class="form-inline my-2 my-lg-0 ml-auto p-2">
+              <button class="lanbtn d-flex flex-rol align-items-center" @click="switchLocal()">
+                {{ displayLocal }}
+              </button>
+            </form>
+            <nav class="nav-mb-display">
+              <div>
+                <button class="btn hamburger" v-on:click="toggle()" type="button">
+                  <mdb-icon icon="bars" />
+                </button>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
 
-  </nav>
+    </div>
 </template>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133351645-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+import AnchorRouterLink from 'vue-anchor-router-link'
 
-  gtag('config', 'UA-133351645-1');
-</script>
-
-<script>
 export default {
   name: 'navbar',
-
+  components: {
+    AnchorRouterLink
+  },
+  data () {
+    return {
+      hamburger: false,
+      msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  methods: {
+    toggle () {
+      this.hamburger = !this.hamburger
+    },
+    switchLocal () {
+      if (this.$i18n.locale === 'th') this.$i18n.locale = 'en'
+      else this.$i18n.locale = 'th'
+    }
+  },
+  computed: {
+    displayLocal () {
+      if (this.$i18n.locale === 'th') return 'EN'
+      else return 'TH'
+    },
+    searchbar: function () {
+      return this.$t('message.searchbar')
+    }
+  }
 }
 </script>
 
 <style scoped>
-.nav-div{
-  background-color: #1B1B38;
-  opacity: 93%;
-  height: 50px;
-  width: 100%;
-  position: fixed;
-  z-index: 999;
+.lanbtn{
+    border: solid;
+    color: white;
+    border-width: 1px;
+    border-color: rgb(106, 106, 173);
+    border-radius: 10000px;
+    background-color: transparent;
+    height: 38px;
+    width: auto;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+.lanbtn:hover{
+  color: #32326C;
+  background-color: rgb(106, 106, 173);
+}
 
+.hamburger{
+    border: solid;
+    color: #707070;
+    border-width: 1px;
+    border-color: #707070;
+    border-radius: 4px;
+    background-color: white;
+    height: 38px;
+    width: 42px;
+    -webkit-box-shadow: 0 0 0 0 !important;
+    box-shadow: 0 0 0 0 !important;
+}
+@media screen and (max-width: 768px) {
+  .nav-display.show {
+    display: block;
+  }
+
+  #navbar-nav li {
+    display: block;
+    width: 100%;
+  }
+}
+.header-div {
+  width: 100%;
+  padding: 0px 0px 0px 0px !important;
+  margin: 0px 0px 0px 0px !important;
+  background-color: rgba(27, 27, 56, 0.616);
+  z-index: 999;
+  position: fixed;
   -webkit-box-shadow: 0px 2px 10px -1px black;
   -moz-box-shadow: 0px 2px 10px -1px black;
   box-shadow: 0px 2px 10px -1px black;
+
 }
 
+.header-top-line {
+  background-color: #E3B800;
+  width: 100%;
+  height: 5px;
+}
+
+.header-webtitle-div {
+  width: 100%;
+
+  padding: 0px 0px 0px 0px !important;
+  margin: 0px 0px 0px 0px !important;
+}
+
+.logo {
+  height: 50px;
+}
+
+.webname-txt {
+  font-family: 'Kanit', sans-serif;
+  font-size: 24px;
+  color: #5D5D5D;
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+button.navbar-toggler {
+    height: 38px !important;
+    border-color: rgb(160, 160, 160) !important;
+}
+@media (max-width: 425px){
+
+    .header-div-padding{
+        padding: 0px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 768px){
+    .golfsearch{
+        display: none !important;
+    }
+    .nav-display{
+        display: none;
+    }
+    .nav-mb-display{
+        display: inherit !important;
+    }
+}
+
+@media (min-width: 769px){
+    .nav-mb-display{
+        display: none !important;
+    }
+}
+
+.main-body {
+  background-color: #F7F7F7;
+  width: 100%;
+  padding: 0px 0px 0px 0px !important;
+  margin: 0px 0px 0px 0px !important;
+}
+
+.navbar-div {
+  background-color: transparent;
+  width: 100% !important;
+  margin: 0px 0px 0px 0px !important;
+  padding: 0px 0px 0px 0px !important;
+}
+
+.header-cont {
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+ol,
+ul {
+  list-style: none !important;
+}
+
+#navbar-nav {
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+  padding-left: 0px !important;
+
+}
+
+#navbar-nav li {
+  display: block;
+  width: 120px;
+  float: left;
+  margin-left: 2px;
+  height: 38px;
+}
+
+#navbar-nav a {
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  padding: 3px;
+  text-decoration: none;
+  color: white;
+  height: 38px;
+  line-height: 31px;
+  transition-duration: 0.3s;
+}
+
+#navbar-nav a:hover {
+  background-color: #32326C;
+  color: white;
+  height: 38px;
+  border-radius: 10000px;
+}
 </style>

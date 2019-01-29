@@ -21,7 +21,21 @@ export default {
     },
     sec6: {
       title: 'Location'
+    },
+    navbar:{
+      regis: 'Register',
+      col1: 'Time Table',
+      col2: 'Location',
+      col3: 'Sponsors',
+      col4: 'FAQ',
+      col5: 'Contact Us'
+    },
+    maintxt: {
+      date: 'March 16, 2019',
+      location: 'King Mongkut\'s University of Technology Thonburi'
+    },
+    btn: {
+      regis: 'Register'
     }
-    
   }
 }

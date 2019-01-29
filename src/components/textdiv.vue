@@ -17,9 +17,6 @@ export default {
   font-family: 'Aleo', serif;
   font-size: 30px;
   color: white;
-  border: solid;
-  border-width: 0px 0px 0px 4px;
-  padding-left: 20px;
 }
 .txt-description{
   font-family: 'Roboto', sans-serif;

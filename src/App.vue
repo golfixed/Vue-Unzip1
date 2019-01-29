@@ -1,19 +1,19 @@
 <template >
   <body class="container-fluid main-body">
     <navbar/>
-    <div class="container">
+    <div  id="regis" class="container">
       <div class="row d-flex align-items-center justify-content-center  home">
         <div class="P1 d-flex align-items-center flex-column">
           <img src="/static/LOGO.png"  style="width: 60%; margin-top: -100px" />
-          <div class="web-txt" style=" margin-top: -100px;">
-            <h1>March 16, 2019</h1>
-            <h3>King Mongkut's University of Technology Thonburi</h3>
+          <div class="web-txt maintxt">
+            <h1 class="maintxt-date">{{ $t("message.maintxt.date") }}</h1>
+            <h3 class="maintxt-location">{{ $t("message.maintxt.location") }}</h3>
           </div>
           <div style="margin-top: 40px;">
             <!-- <img src="/static/regisbtn.png" class="regisbtn"/> -->
             <a href="https://www.eventpop.me/e/5037-unzipevent">
             <button class="regisbtn">
-              <p style="font-size: 30px; margin: 0;">Register</p>
+              <p style="font-size: 25px; margin: 0;">{{ $t("message.btn.regis") }}</p>
               <!-- <p  style="font-size: 15px; margin: 0;">ลงทะเบียน</p> -->
               </button>
             </a>
@@ -48,6 +48,7 @@
       <div class="topic-div">
         <textdiv
           :title="sec5"
+          id="timetable"
         >
         </textdiv>
         <timetable/>
@@ -55,6 +56,7 @@
       <div class="topic-div">
         <textdiv
           :title="sec6"
+          id="location"
         >
         </textdiv>
         <gmaps/>
@@ -121,6 +123,10 @@ export default {
 @import 'bootstrap/dist/css/bootstrap.css';
 @import 'bootstrap-vue/dist/bootstrap-vue.css';
 
+
+.maintxt{
+  margin-top: -100px;
+}
 .txt-title{
   font-family: 'Aleo', serif;
   font-size: 30px;
@@ -147,7 +153,6 @@ export default {
 }
 .home{
   /* background-color: green; */
-  width: 100%;
   height: 100vh;
 }
 .web-txt{
@@ -174,10 +179,19 @@ export default {
 .regisbtn:active {
   border-color: #DEE3EA !important;
 }
-
+/* MOBILE SITE HERE */
 @media (max-width: 425px){
   .topic-div{
     padding: 0px 30px 0px 30px !important;
+  }
+  .maintxt{
+    margin-top: 0px;
+  }
+  .maintxt-date{
+    font-size: 25px;
+  }
+  .maintxt-location{
+    font-size: 20px;
   }
 }
 .topic-div{
