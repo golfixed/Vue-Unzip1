@@ -97,7 +97,7 @@ export default {
     padding-right: 11px;
 }
 .lanbtn:hover{
-  color: #32326C;
+  color: white;
   background-color: rgb(106, 106, 173);
 }
 
@@ -244,7 +244,7 @@ ul {
 }
 
 #navbar-nav a:hover {
-  background-color: #32326C;
+  background-color: rgba(50, 50, 108, 0.658);
   color: white;
   height: 38px;
   border-radius: 10000px;
