@@ -14,12 +14,12 @@ export default {
 
 <style scoped>
 .txt-title{
-  font-family: 'Aleo', serif;
+  font-family: 'Kanit', sans-serif;
   font-size: 30px;
   color: white;
 }
 .txt-description{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-size: 20px;
   color: #8E87C0;
 }

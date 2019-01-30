@@ -6,12 +6,12 @@
       style="width: 100%">
       <el-table-column
         prop="time"
-        label="Time"
+        :label="time"
       >
       </el-table-column>
       <el-table-column
         prop="activity"
-        label="Activity"
+        :label="activity"
       >
       </el-table-column>
     </el-table>
@@ -44,6 +44,14 @@ export default {
         activity: 'Connection Activity',
       }
       ]}
+  },
+  computed: {
+    time: function () {
+    return this.$t('message.timetable.title')
+    },
+    activity: function () {
+    return this.$t('message.timetable.activity')
+    }
   }
 }
 </script>
@@ -56,6 +64,7 @@ export default {
 }
 
 .el-table th>.cell {
+  font-family: 'Kanit', sans-serif;
   text-align: center;
   font-size: 20px;
   position: relative;
@@ -67,6 +76,7 @@ export default {
 }
 
 .el-table .cell {
+  font-family: 'Kanit', sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   white-space: normal;

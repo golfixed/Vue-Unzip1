@@ -17,18 +17,22 @@
                       <a href="#" v-scroll-to="'#location'">{{ $t("message.navbar.col2") }}</a>
                     </li>
                     <li>
-                      <a href="#" v-scroll-to="'#sponsors'">{{ $t("message.navbar.col3") }}</a>
+                      <a href="#" v-scroll-to="'#sponsor'">{{ $t("message.navbar.col3") }}</a>
                     </li>
                     <li>
                       <a href="#" v-scroll-to="'#faq'">{{ $t("message.navbar.col4") }}</a>
-                    </li>
-                    <li>
-                      <a href="#" v-scroll-to="'#contactus'">{{ $t("message.navbar.col5") }}</a>
                     </li>
                   </ul>
                 </nav>
               </div>
             </div>
+            <form class="form-inline my-2 my-lg-0 ml-auto p-2">
+              <a href="http://m.me/unzipEvent">
+                <button class="contactbtn d-flex flex-rol align-items-center">
+                  {{ contact }}
+                </button>
+              </a>
+            </form>
             <form class="form-inline my-2 my-lg-0 ml-auto p-2">
               <button class="lanbtn d-flex flex-rol align-items-center" @click="switchLocal()">
                 {{ displayLocal }}
@@ -78,6 +82,9 @@ export default {
     },
     searchbar: function () {
       return this.$t('message.searchbar')
+    },
+    contact: function (){
+      return this.$t('message.btn.contact')
     }
   }
 }
@@ -95,6 +102,23 @@ export default {
     width: auto;
     padding-left: 11px;
     padding-right: 11px;
+}
+.contactbtn{
+    border: solid;
+    color: white;
+    border-width: 1px;
+    border-color: rgb(106, 106, 173);
+    border-radius: 10000px;
+    background-color: transparent;
+    height: 38px;
+    width: auto;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+.contactbtn:hover{
+  text-decoration: none;
+  color: white;
+  background-color: rgb(106, 106, 173);
 }
 .lanbtn:hover{
   color: white;

@@ -22,20 +22,54 @@ export default {
     sec6: {
       title: 'Location'
     },
+    sec7: {
+      title: 'Sponsors'
+    },
+    sec8: {
+      title: 'FAQs'
+    },
     navbar:{
       regis: 'Register',
       col1: 'Time Table',
       col2: 'Location',
       col3: 'Sponsors',
-      col4: 'FAQ',
-      col5: 'Contact Us'
+      col4: 'FAQs',
+      col5: 'Support'
     },
     maintxt: {
       date: 'March 16, 2019',
       location: 'King Mongkut\'s University of Technology Thonburi'
     },
     btn: {
-      regis: 'Register'
+      regis: 'Register',
+      contact: 'Contact'
+    },
+    timetable: {
+      title: 'Time',
+      activity: 'Activity'
+    },
+    sponsor: {
+      spon1: 'Angular Thailand',
+      spon2: 'King Mongkut\'s University of Technology Thonburi',
+      spon3: 'Computer Engineering Department'
+    },
+    faq: {
+      question1: {
+        q: 'Q: When is the event?',
+        a: 'A: It will be on March 16, 2019. At Classroom Building 2, King Mongkut\'s University of Technnology Thonburi'
+      },
+      question2: {
+        q: 'Q: Where to follow the update?',
+        a: 'A: You can keep you posted on '
+      },
+      question3: {
+        q: 'Q: Who can attend this event?',
+        a: 'A: KMUTT student, staff and everyone who are interested'
+      },
+      question4: {
+        q: 'Q: What topic are speakable?',
+        a: 'A: Any interesting topic that you are interested. It doesn\'t have to be someting only related to technology.'
+      }
     }
   }
 }
