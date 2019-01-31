@@ -46,7 +46,14 @@ export default {
     },
     timetable: {
       title: 'Time',
-      activity: 'Activity'
+      activity: 'Activity',
+      act: {
+        a1: 'Registration & Opening Ceremony',
+        a2: 'Guest Speaker Session',
+        a3: 'Launch Break',
+        a4: 'Speaker Session',
+        a5: 'Connection Activity'
+      }
     },
     sponsor: {
       spon1: 'Angular Thailand',

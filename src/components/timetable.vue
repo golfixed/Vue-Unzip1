@@ -25,32 +25,32 @@ export default {
     return {
       tableData: [{
         time: '09.00',
-        activity: 'Registration & Opening Ceremony',
+        activity: '' + this.$t('message.timetable.act.a1'),
       },
       {
         time: '09.50',
-        activity: 'Guest Speaker Session',
+        activity: '' + this.$t('message.timetable.act.a2'),
       },
       {
         time: '12.00',
-        activity: 'Launch Break',
+        activity: '' + this.$t('message.timetable.act.a3'),
       },
       {
         time: '14.00',
-        activity: 'Speaker Session',
+        activity: '' + this.$t('message.timetable.act.a4'),
       },
       {
         time: '16.10',
-        activity: 'Connection Activity',
+        activity: '' + this.$t('message.timetable.act.a5'),
       }
       ]}
   },
   computed: {
     time: function () {
-    return this.$t('message.timetable.title')
+      return this.$t('message.timetable.title')
     },
     activity: function () {
-    return this.$t('message.timetable.activity')
+      return this.$t('message.timetable.activity')
     }
   }
 }
