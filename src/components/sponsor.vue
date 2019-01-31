@@ -3,24 +3,27 @@
   <el-carousel :interval="4000" indicator-position="none" type="card" height="300px">
     <el-carousel-item v-for="item in 1" :key="item">
       <div class="sponsor d-flex align-items-center justify-content-center flex-column">
-        <img src="/static/sponsor/angular.png" style="width: 35%;" />
-        <h5 style="margin: 20px; text-align: center;">{{ $t("message.sponsor.spon1") }}</h5>
+        <img src="/static/sponsor/sponsor_cpe.png" style="width: 35%;" />
+        <h5 class="sp-name">{{ $t("message.sponsor.spon1.name") }}</h5>
+        <h5 class="sp-des">{{ $t("message.sponsor.spon1.description") }}</h5>
       </div>
     </el-carousel-item>
     <el-carousel-item v-for="item in 1" :key="item">
       <div class="sponsor d-flex align-items-center justify-content-center flex-column">
-        <img src="/static/sponsor/kmutt.png" style="width: 35%;" />
-        <h5 style="margin: 20px; text-align: center;">{{ $t("message.sponsor.spon2") }}</h5>
+        <img src="/static/sponsor/sponsor_angular.png" style="width: 35%;" />
+        <h5 class="sp-name">{{ $t("message.sponsor.spon2.name") }}</h5>
+        <h5 class="sp-des">{{ $t("message.sponsor.spon2.description") }}</h5>
       </div>
     </el-carousel-item>
     <el-carousel-item v-for="item in 1" :key="item">
       <div class="sponsor d-flex align-items-center justify-content-center flex-column">
-        <img src="/static/sponsor/cpe.png" style="width: 35%;" />
-        <h5 style="margin: 20px; text-align: center;">{{ $t("message.sponsor.spon3") }}</h5>
+        <img src="/static/sponsor/sponsor_kmutthatch.png" style="width: 35%;" />
+        <h5 class="sp-name">{{ $t("message.sponsor.spon3.name") }}</h5>
+        <h5 class="sp-des">{{ $t("message.sponsor.spon3.description") }}</h5>
       </div>
     </el-carousel-item>
   </el-carousel>
-  <div class="row" style="margin-top: 20px;">
+  <!-- <div class="row" style="margin-top: 20px;">
     <div class="col-md-2 d-flex align-items-center justify-content-center">
       <img src="/static/sponsor/cpe.png" style="height: 80px;" />
     </div>
@@ -39,7 +42,7 @@
     <div class="col-md-2 d-flex align-items-center justify-content-center">
       <img src="/static/sponsor/angular.png" style="height: 80px;" />
     </div>
-  </div>
+  </div> -->
   
 </div>
 </template>
@@ -50,6 +53,20 @@ export default {
 </script>
 
 <style scoped>
+
+.sp-name {
+  color: rgb(34, 34, 34);
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.sp-des {
+  color: #535353;
+  text-align: center;
+  font-size: 16px;
+}
+
+
 .el-carousel__item {
   border-radius: 20px;
   overflow: hidden;

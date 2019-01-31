@@ -4,12 +4,12 @@
     <div  id="regis" class="container" style="padding-bottom: 40px;">
       <div class="row d-flex align-items-center justify-content-center  home">
         <div class="P1 d-flex align-items-center flex-column">
-          <img src="/static/LOGO.png"  style="width: 60%; margin-top: -100px" />
+          <img src="/static/LOGO.png"  style="width: 60%; margin-top: -60px" />
           <div class="web-txt maintxt">
             <h1 class="maintxt-date">{{ $t("message.maintxt.date") }}</h1>
             <h3 class="maintxt-location">{{ $t("message.maintxt.location") }}</h3>
           </div>
-          <div style="margin-top: 40px;">
+          <div style="margin-top: 30px;">
             <!-- <img src="/static/regisbtn.png" class="regisbtn"/> -->
             <a href="https://www.eventpop.me/e/5037-unzipevent">
             <button class="regisbtn">
