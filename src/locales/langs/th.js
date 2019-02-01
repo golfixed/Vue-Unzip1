@@ -62,7 +62,7 @@ export default {
       },
       spon2:{
         name: 'Angular ประเทศไทย',
-        description: '',
+        description: 'Angular Developers Thailand Public Group',
       },
       spon3:{
         name: 'KMUTT Hatch',
