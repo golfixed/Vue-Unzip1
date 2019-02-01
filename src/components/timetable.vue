@@ -25,23 +25,23 @@ export default {
     return {
       tableData: [{
         time: '09.00',
-        activity: '' + this.$t('message.timetable.act.a1'),
+        activity: this.$t('message.timetable.act.a1'),
       },
       {
         time: '09.50',
-        activity: '' + this.$t('message.timetable.act.a2'),
+        activity: this.$t('message.timetable.act.a2'),
       },
       {
         time: '12.00',
-        activity: '' + this.$t('message.timetable.act.a3'),
+        activity: this.$t('message.timetable.act.a3'),
       },
       {
         time: '14.00',
-        activity: '' + this.$t('message.timetable.act.a4'),
+        activity: this.$t('message.timetable.act.a4'),
       },
       {
         time: '16.10',
-        activity: '' + this.$t('message.timetable.act.a5'),
+        activity: this.$t('message.timetable.act.a5'),
       }
       ]}
   },

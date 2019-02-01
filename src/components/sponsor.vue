@@ -1,32 +1,43 @@
 <template>
 <div>
-  <el-carousel :interval="4000" indicator-position="none" type="card" height="300px">
+  <el-carousel :interval="4000" indicator-position="none" type="card" class="sp-card">
     <el-carousel-item v-for="item in 1" :key="item">
       <div class="sponsor d-flex align-items-center justify-content-center flex-column">
-        <img src="/static/sponsor/angular.png" style="width: 35%;" />
-        <h5 style="margin: 20px; text-align: center;">{{ $t("message.sponsor.spon1") }}</h5>
+        <img src="/static/sponsor/sponsor_cpe.png" class="sp-logo" />
+        <h5 class="sp-name">{{ $t("message.sponsor.spon1.name") }}</h5>
+        <h5 class="sp-des">{{ $t("message.sponsor.spon1.description") }}</h5>
       </div>
     </el-carousel-item>
     <el-carousel-item v-for="item in 1" :key="item">
       <div class="sponsor d-flex align-items-center justify-content-center flex-column">
-        <img src="/static/sponsor/kmutt.png" style="width: 35%;" />
-        <h5 style="margin: 20px; text-align: center;">{{ $t("message.sponsor.spon2") }}</h5>
+        <img src="/static/sponsor/sponsor_angular.png" class="sp-logo" />
+        <h5 class="sp-name">{{ $t("message.sponsor.spon2.name") }}</h5>
+        <h5 class="sp-des">{{ $t("message.sponsor.spon2.description") }}</h5>
       </div>
     </el-carousel-item>
     <el-carousel-item v-for="item in 1" :key="item">
       <div class="sponsor d-flex align-items-center justify-content-center flex-column">
-        <img src="/static/sponsor/cpe.png" style="width: 35%;" />
-        <h5 style="margin: 20px; text-align: center;">{{ $t("message.sponsor.spon3") }}</h5>
+        <img src="/static/sponsor/sponsor_kmutthatch.png" class="sp-logo" />
+        <h5 class="sp-name">{{ $t("message.sponsor.spon3.name") }}</h5>
+        <h5 class="sp-des">{{ $t("message.sponsor.spon3.description") }}</h5>
       </div>
     </el-carousel-item>
   </el-carousel>
   <!-- <div class="row" style="margin-top: 20px;">
+<<<<<<< HEAD
     <div class="col-md-2 d-flex align-items-center justify-content-center">
       <img src="/static/sponsor/cpe.png" style="height: 80px;" />
+=======
+    <div class="col-md-4 d-flex align-items-center justify-content-around sp-sm-div">
+      <img src="/static/sponsor/sponsor_kmutt.png" style="height: 100px;" />
+      <img src="/static/sponsor/sponsor_kmutt.png" style="height: 100px;" />
+>>>>>>> a1f60a2aeb84612cd40c14d55fcdd95109130f04
     </div>
-    <div class="col-md-2 d-flex align-items-center justify-content-center">
-      <img src="/static/sponsor/kmutt.png" style="height: 80px;" />
+    <div class="col-md-4 d-flex align-items-center justify-content-around sp-sm-div">
+      <img src="/static/sponsor/sponsor_kmutt.png" style="height: 100px;" />
+      <img src="/static/sponsor/sponsor_kmutt.png" style="height: 100px;" />
     </div>
+<<<<<<< HEAD
     <div class="col-md-2 d-flex align-items-center justify-content-center">
       <img src="/static/sponsor/angular.png" style="height: 80px;" />
     </div>
@@ -40,6 +51,14 @@
       <img src="/static/sponsor/angular.png" style="height: 80px;" />
     </div>
   </div> -->
+=======
+    <div class="col-md-4 d-flex align-items-center justify-content-around sp-sm-div">
+      <img src="/static/sponsor/sponsor_kmutt.png" style="height: 100px;" />
+      <img src="/static/sponsor/sponsor_kmutt.png" style="height: 100px;" />
+    </div> -->
+
+  <!-- </div> -->
+>>>>>>> a1f60a2aeb84612cd40c14d55fcdd95109130f04
   
 </div>
 </template>
@@ -50,6 +69,50 @@ export default {
 </script>
 
 <style scoped>
+
+.sp-name {
+  color: rgb(34, 34, 34);
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.sp-des {
+  color: #535353;
+  text-align: center;
+  font-size: 16px;
+}
+.sp-card {
+  height: 300px;
+}
+.el-carousel__container {
+    position: relative;
+    height: 300px !important;
+}
+.sp-logo {
+  width: 35%;
+}
+.sp-sm-div{
+  padding: 30px 0px 0px 0px;
+  margin: 0px;
+}
+@media (max-width: 425px) {
+  .sp-logo {
+  width: 70%;
+  }
+  .sp-name {
+    display: none;
+  }
+  .sp-des {
+    display: none;
+  }
+  .sp-card {
+  height: auto;
+  }
+  .el-carousel__container {
+    height: 182px !important;
+}
+}
+
 .el-carousel__item {
   border-radius: 20px;
   overflow: hidden;

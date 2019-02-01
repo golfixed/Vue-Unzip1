@@ -56,9 +56,18 @@ export default {
       }
     },
     sponsor: {
-      spon1: 'Angular Thailand',
-      spon2: 'King Mongkut\'s University of Technology Thonburi',
-      spon3: 'Computer Engineering Department'
+      spon1:{
+        name: 'Computer Engineering Department',
+        description: 'King Mongkut\'s University of Technology Thonburi',
+      },
+      spon2:{
+        name: 'Angular Thailand',
+        description: 'Angular Developers Thailand Public Group',
+      },
+      spon3:{
+        name: 'KMUTT Hatch',
+        description: 'King Mongkut\'s University of Technology Thonburi',
+      }
     },
     faq: {
       question1: {

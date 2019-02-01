@@ -1,19 +1,19 @@
 <template>
   <body class="container-fluid main-body">
     <navbar/>
-    <div  id="regis" class="container" style="padding-bottom: 40px;">
+    <div  id="regis" class="container">
       <div class="row d-flex align-items-center justify-content-center  home">
         <div class="P1 d-flex align-items-center flex-column">
-          <img src="/static/LOGO.png"  style="width: 60%; margin-top: -100px" />
+          <img src="/static/LOGO.png"  class="web-logo" />
           <div class="web-txt maintxt">
             <h1 class="maintxt-date">{{ $t("message.maintxt.date") }}</h1>
             <h3 class="maintxt-location">{{ $t("message.maintxt.location") }}</h3>
           </div>
-          <div style="margin-top: 40px;">
+          <div style="margin-top: 30px;">
             <!-- <img src="/static/regisbtn.png" class="regisbtn"/> -->
             <a href="https://www.eventpop.me/e/5037-unzipevent">
             <button class="regisbtn">
-              <p style="font-size: 25px; margin: 0;">{{ $t("message.btn.regis") }}</p>
+              <p class="regisbtntxt">{{ $t("message.btn.regis") }}</p>
               <!-- <p  style="font-size: 15px; margin: 0;">ลงทะเบียน</p> -->
               </button>
             </a>
@@ -48,6 +48,17 @@
         <textdiv :title="sec8" id="faq" />
         <faq/>
       </div>
+      <div class="topic-div">
+        <div class="row" style="    padding-right: 0px;">
+          <div class="col-md-6">
+            <p class="credit-left">All Right reserved by UNZIP#1 team.</p>
+          </div>
+          <div class="col-md-6">
+            <p class="credit-right">© UNZIP 2019</p>
+          </div>
+        </div>
+      </div>
+
     </div>
 
   </body>
@@ -117,6 +128,16 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Kanit');
 @import 'bootstrap/dist/css/bootstrap.css';
 @import 'bootstrap-vue/dist/bootstrap-vue.css';
+.web-logo{
+  width: 60%;
+  margin-top: -60px;
+}
+@media (max-width: 425px){
+  .web-logo{
+    width: 100%;
+    margin-top: 35px;
+}
+}
 .sponsor{
   width: 100%;
 }
@@ -140,8 +161,10 @@ export default {
 .main-body {
     background-image: url(/static/BG/mainbg.png);
     background-size: cover;
-    background-position: center top;
+    background-position: top center;
     background-attachment: fixed;
+    background-origin: content-box;
+    background-repeat: no-repeat;
     width: 100%;
     margin: 0 !important;
     padding: 0px 0px 0px 0px !important;
@@ -169,6 +192,10 @@ export default {
   border-width: 5px;
   transition-duration: 0.3s;
 }
+.regisbtntxt {
+  font-size: 25px;
+  margin: 0px;
+}
 .regisbtn:hover {
   transform: scale(1.15);
   border-color: #DEE3EA !important;
@@ -179,7 +206,7 @@ export default {
 /* MOBILE SITE HERE */
 @media (max-width: 425px){
   .topic-div{
-    padding: 0px 30px 0px 30px !important;
+    padding: 25px 10px 25px 10px !important;
   }
   .maintxt{
     margin-top: 0px;
@@ -190,6 +217,28 @@ export default {
   .maintxt-location{
     font-size: 20px;
   }
+  .credit-left {
+  text-align: center !important;
+  }
+  .credit-right {
+    text-align: center !important;
+  }
+  .regisbtn {
+      width: 110px !important;
+      height: 110px !important;
+  }
+  .regisbtntxt {
+    font-size: 19px !important;
+    margin: 0px;
+  }
+}
+.credit-left {
+  color: white;
+  text-align: left;
+}
+.credit-right {
+  color: white;
+  text-align: right;
 }
 .topic-div{
   padding: 0px 100px 0px 100px;
