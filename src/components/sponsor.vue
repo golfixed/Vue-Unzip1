@@ -20,7 +20,7 @@
       </div>
     </el-carousel-item>
   </el-carousel>
-  <div class="row" style="margin-top: 20px;">
+  <!-- <div class="row" style="margin-top: 20px;">
     <div class="col-md-2 d-flex align-items-center justify-content-center">
       <img src="/static/sponsor/cpe.png" style="height: 80px;" />
     </div>
@@ -39,7 +39,7 @@
     <div class="col-md-2 d-flex align-items-center justify-content-center">
       <img src="/static/sponsor/angular.png" style="height: 80px;" />
     </div>
-  </div>
+  </div> -->
   
 </div>
 </template>
