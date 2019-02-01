@@ -24,20 +24,41 @@
     </el-carousel-item>
   </el-carousel>
   <!-- <div class="row" style="margin-top: 20px;">
+<<<<<<< HEAD
+    <div class="col-md-2 d-flex align-items-center justify-content-center">
+      <img src="/static/sponsor/cpe.png" style="height: 80px;" />
+=======
     <div class="col-md-4 d-flex align-items-center justify-content-around sp-sm-div">
       <img src="/static/sponsor/sponsor_kmutt.png" style="height: 100px;" />
       <img src="/static/sponsor/sponsor_kmutt.png" style="height: 100px;" />
+>>>>>>> a1f60a2aeb84612cd40c14d55fcdd95109130f04
     </div>
     <div class="col-md-4 d-flex align-items-center justify-content-around sp-sm-div">
       <img src="/static/sponsor/sponsor_kmutt.png" style="height: 100px;" />
       <img src="/static/sponsor/sponsor_kmutt.png" style="height: 100px;" />
     </div>
+<<<<<<< HEAD
+    <div class="col-md-2 d-flex align-items-center justify-content-center">
+      <img src="/static/sponsor/angular.png" style="height: 80px;" />
+    </div>
+    <div class="col-md-2 d-flex align-items-center justify-content-center">
+      <img src="/static/sponsor/cpe.png" style="height: 80px;" />
+    </div>
+    <div class="col-md-2 d-flex align-items-center justify-content-center">
+      <img src="/static/sponsor/kmutt.png" style="height: 80px;" />
+    </div>
+    <div class="col-md-2 d-flex align-items-center justify-content-center">
+      <img src="/static/sponsor/angular.png" style="height: 80px;" />
+    </div>
+  </div> -->
+=======
     <div class="col-md-4 d-flex align-items-center justify-content-around sp-sm-div">
       <img src="/static/sponsor/sponsor_kmutt.png" style="height: 100px;" />
       <img src="/static/sponsor/sponsor_kmutt.png" style="height: 100px;" />
     </div> -->
 
   <!-- </div> -->
+>>>>>>> a1f60a2aeb84612cd40c14d55fcdd95109130f04
   
 </div>
 </template>
