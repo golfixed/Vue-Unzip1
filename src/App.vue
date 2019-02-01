@@ -20,7 +20,7 @@
           </div>
         </div>
       </div>
-      <div class="topic-div">
+      <div class="topic-div ">
         <textdiv :title="sec1" :description="sec1des"/>
       </div>
       <div class="topic-div">
@@ -32,19 +32,19 @@
       <div class="topic-div">
         <textdiv :title="sec4" :description="sec4des"/>
       </div>
-      <div class="topic-div">
+      <div class="topic-div fadeInUp" >
         <textdiv :title="sec5" id="timetable" />
         <timetable/>
       </div>
-      <div class="topic-div">
+      <div class="topic-div fadeInUp">
         <textdiv :title="sec6" id="location" />
         <gmaps/>
       </div>
-      <div class="topic-div sponsor">
+      <div class="topic-div sponsor fadeInUp">
         <textdiv :title="sec7" id="sponsor" />
         <sponsor/>
       </div>
-      <div class="topic-div">
+      <div class="topic-div fadeInUp">
         <textdiv :title="sec8" id="faq" />
         <faq/>
       </div>
@@ -204,7 +204,7 @@ export default {
   border-color: #DEE3EA !important;
 }
 /* MOBILE SITE HERE */
-@media (max-width: 425px){
+@media (max-width: 768px){
   .topic-div{
     padding: 25px 10px 25px 10px !important;
   }
@@ -246,4 +246,12 @@ export default {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+
+/* ANIMATION CSS HERE */
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
 </style>

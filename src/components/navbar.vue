@@ -240,7 +240,7 @@ button.navbar-toggler {
     height: 38px !important;
     border-color: rgb(160, 160, 160) !important;
 }
-@media (max-width: 425px){
+@media (max-width: 768px){
 
     .header-div-padding{
         padding: 0px 0px 0px 0px;

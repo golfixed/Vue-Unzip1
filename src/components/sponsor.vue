@@ -74,7 +74,7 @@ export default {
   padding: 30px 0px 0px 0px;
   margin: 0px;
 }
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .sp-logo {
   width: 70%;
   }
