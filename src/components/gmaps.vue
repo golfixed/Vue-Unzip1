@@ -12,10 +12,6 @@
 
 <script>
 export default {
-<<<<<<< HEAD
-  name: "GoogleMap"
-=======
-  name: "GoogleMap",
->>>>>>> a1f60a2aeb84612cd40c14d55fcdd95109130f04
+  name: 'GoogleMap'
 }
 </script>

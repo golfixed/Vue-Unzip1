@@ -45,13 +45,13 @@ export default {
 .txt-question{
   margin: 10px;
   font-family: 'Kanit', sans-serif;
-  font-size: 19px;
+  font-size: 17px;
   color: #434547;
 }
 .txt-answer{
   margin: 10px;
   font-family: 'Kanit', sans-serif;
-  font-size: 17px;
+  font-size: 15px;
   color: #606266;
 }
 .el-collapse-item__header {

@@ -66,7 +66,7 @@ export default {
 .el-table th>.cell {
   font-family: 'Kanit', sans-serif;
   text-align: center;
-  font-size: 20px;
+  font-size: 17px;
   position: relative;
   word-wrap: normal;
   text-overflow: ellipsis;
@@ -81,8 +81,8 @@ export default {
   box-sizing: border-box;
   white-space: normal;
   word-break: break-all;
-  line-height: 23px;
+  line-height: 17px;
   text-align: center;
-  font-size: 18px;
+  font-size: 17px;
 }
 </style>

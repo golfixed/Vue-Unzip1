@@ -1,5 +1,5 @@
 <template>
-  <body class="container-fluid main-body">
+  <body class="container-fluid main-body background">
     <navbar/>
     <div  id="regis" class="container">
       <div class="row d-flex align-items-center justify-content-center  home">
@@ -158,13 +158,27 @@ export default {
 .P1{
   width:100%;
 }
-.main-body {
+
+.background{
     background-image: url(/static/BG/mainbg.png);
     background-size: cover;
     background-position: top center;
     background-attachment: fixed;
     background-origin: content-box;
     background-repeat: no-repeat;
+}
+@media (max-width: 425px){
+  .background{
+    background-image: url(/static/BG/mobile-bg.png);
+    background-size: 100%;
+    background-position: top center;
+    background-attachment: scroll !important;
+    background-repeat: no-repeat;
+    background-color: rgb(36,16,74);
+  }
+}
+.main-body {
+
     width: 100%;
     margin: 0 !important;
     padding: 0px 0px 0px 0px !important;

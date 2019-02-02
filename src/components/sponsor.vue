@@ -1,6 +1,6 @@
 <template>
 <div>
-  <el-carousel :interval="4000" indicator-position="none" type="card" class="sp-card">
+  <el-carousel :interval="2000" indicator-position="none" type="card" arrow="never" class="sp-card">
     <el-carousel-item v-for="item in 1" :key="item">
       <div class="sponsor d-flex align-items-center justify-content-center flex-column">
         <img src="/static/sponsor/sponsor_cpe.png" class="sp-logo" />
@@ -24,14 +24,9 @@
     </el-carousel-item>
   </el-carousel>
   <!-- <div class="row" style="margin-top: 20px;">
-<<<<<<< HEAD
-    <div class="col-md-2 d-flex align-items-center justify-content-center">
-      <img src="/static/sponsor/cpe.png" style="height: 80px;" />
-=======
     <div class="col-md-4 d-flex align-items-center justify-content-around sp-sm-div">
       <img src="/static/sponsor/sponsor_kmutt.png" style="height: 100px;" />
       <img src="/static/sponsor/sponsor_kmutt.png" style="height: 100px;" />
->>>>>>> a1f60a2aeb84612cd40c14d55fcdd95109130f04
     </div>
     <div class="col-md-4 d-flex align-items-center justify-content-around sp-sm-div">
       <img src="/static/sponsor/sponsor_kmutt.png" style="height: 100px;" />
@@ -51,14 +46,6 @@
       <img src="/static/sponsor/angular.png" style="height: 80px;" />
     </div>
   </div> -->
-=======
-    <div class="col-md-4 d-flex align-items-center justify-content-around sp-sm-div">
-      <img src="/static/sponsor/sponsor_kmutt.png" style="height: 100px;" />
-      <img src="/static/sponsor/sponsor_kmutt.png" style="height: 100px;" />
-    </div> -->
-
-  <!-- </div> -->
->>>>>>> a1f60a2aeb84612cd40c14d55fcdd95109130f04
   
 </div>
 </template>
@@ -73,16 +60,17 @@ export default {
 .sp-name {
   color: rgb(34, 34, 34);
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 20px;
 }
 .sp-des {
   color: #535353;
   text-align: center;
   font-size: 16px;
+  margin-bottom: 50px;
 }
 .sp-card {
-  height: 300px;
+  height: 350px;
 }
 .el-carousel__container {
     position: relative;
@@ -90,27 +78,54 @@ export default {
 }
 .sp-logo {
   width: 35%;
+  margin-top: 50px;
 }
 .sp-sm-div{
   padding: 30px 0px 0px 0px;
   margin: 0px;
 }
-@media (max-width: 768px) {
+
+/* MOBILE SITE */
+@media screen and (max-width: 425px) {
   .sp-logo {
-  width: 70%;
+  width: 70% !important;
+  margin: 20px !important;
   }
   .sp-name {
-    display: none;
+    display: none !important;
   }
   .sp-des {
-    display: none;
+    display: none !important;
   }
   .sp-card {
-  height: auto;
+  height: 185px !important;
   }
-  .el-carousel__container {
-    height: 182px !important;
+  .sp-div-height  {
+    position: unset !important;
+    height: 300px;
+  }
 }
+
+/* TABLET SITE */
+@media (max-width: 768px) {
+  .sp-card {
+  height: 350px;
+  }
+  .sp-logo {
+  width: 50%;
+  margin: 25px;
+  }
+  .sp-name {
+    margin-top: 10px;
+    display: inherit;
+  }
+  .sp-des {
+    display: inherit;
+  }
+  .sp-div-height {
+    position: unset !important;
+    height: 300px;
+  }
 }
 
 .el-carousel__item {
@@ -139,6 +154,7 @@ export default {
 
 .el-carousel__item--card {
   width: 50%;
+  height: auto;
   -webkit-transition: -webkit-transform .4s ease-in-out;
   transition: -webkit-transform .4s ease-in-out;
   transition: transform .4s ease-in-out;
@@ -151,7 +167,6 @@ export default {
     height: 100%;
   }
   .el-carousel__item h3 {
-    color: #475669;
     font-size: 14px;
     opacity: 0.75;
     line-height: 200px;
@@ -159,10 +174,16 @@ export default {
   }
 
   .el-carousel__item:nth-child(2n) {
-    background-color: #99a9bf;
+    background-color: #ffffff;
+    border-width: 1px 1px 1px 1px !important;
+    border-color: #e0e0e0 !important;
+    border: solid;
   }
 
   .el-carousel__item:nth-child(2n+1) {
-    background-color: #d3dce6;
+    background-color: #ffffff;
+    border-width: 1px 1px 1px 1px !important;
+    border-color: #e0e0e0 !important;
+    border: solid;
   }
 </style>

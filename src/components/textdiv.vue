@@ -20,7 +20,7 @@ export default {
 }
 .txt-description{
   font-family: 'Kanit', sans-serif;
-  font-size: 20px;
+  font-size: 17px;
   color: #8E87C0;
 }
 </style>
