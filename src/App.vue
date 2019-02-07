@@ -1,5 +1,5 @@
 <template>
-  <body class="container-fluid main-body background">
+  <body class="container-fluid main-body">
     <navbar/>
     <div  id="regis" class="container">
       <div class="row d-flex align-items-center justify-content-center  home">
@@ -11,7 +11,7 @@
           </div>
           <div style="margin-top: 30px;">
             <!-- <img src="/static/regisbtn.png" class="regisbtn"/> -->
-            <a href="https://www.eventpop.me/e/5037-unzipevent">
+            <a href="https://bit.ly/UnzipEvent">
             <button class="regisbtn">
               <p class="regisbtntxt">{{ $t("message.btn.regis") }}</p>
               <!-- <p  style="font-size: 15px; margin: 0;">ลงทะเบียน</p> -->
@@ -159,22 +159,25 @@ export default {
   width:100%;
 }
 
-.background{
+body{
     background-image: url(/static/BG/mainbg.png);
-    background-size: cover;
-    background-position: top center;
-    background-attachment: fixed;
-    background-origin: content-box;
-    background-repeat: no-repeat;
-}
-@media (max-width: 425px){
-  .background{
-    background-image: url(/static/BG/mobile-bg.png);
+    background-color: rgb(31,25,60);
     background-size: 100%;
     background-position: top center;
-    background-attachment: scroll !important;
+    background-attachment: scroll;
     background-repeat: no-repeat;
+    /* background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat; */
+}
+@media (max-width: 425px){
+  body{
+    background-image: url(/static/BG/mobile-bg.png);
     background-color: rgb(36,16,74);
+    background-size: 100%;
+    background-position: top center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
   }
 }
 .main-body {
