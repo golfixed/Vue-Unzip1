@@ -11,7 +11,7 @@
           </div>
           <div style="margin-top: 30px;">
             <!-- <img src="/static/regisbtn.png" class="regisbtn"/> -->
-            <a href="https://bit.ly/UnzipEvent">
+            <a href="https://register.unzip.events">
             <button class="regisbtn">
               <p class="regisbtntxt">{{ $t("message.btn.regis") }}</p>
               <!-- <p  style="font-size: 15px; margin: 0;">ลงทะเบียน</p> -->
