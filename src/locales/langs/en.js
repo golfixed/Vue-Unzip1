@@ -67,6 +67,14 @@ export default {
       spon3:{
         name: 'KMUTT Hatch',
         description: 'King Mongkut\'s University of Technology Thonburi',
+      },
+      spon4:{
+        name: 'Software and Computing Innovation Center',
+        description: 'King Mongkut\'s University of Technology Thonburi',
+      },
+      spon5:{
+        name: 'Advanced Analytics Lab',
+        description: 'Computer Engineering Department',
       }
     },
     faq: {
