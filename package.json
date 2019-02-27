@@ -15,7 +15,7 @@
     "bootstrap": "^4.2.1",
     "bootstrap-vue": "^2.0.0-rc.11",
     "element-ui": "^2.5.2",
-    "firebase": "^5.8.2",
+    "firebase": "^5.8.4",
     "mdbvue": "^5.0.0",
     "vue": "^2.5.22",
     "vue-anchor-router-link": "^0.8.4",
