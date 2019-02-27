@@ -12,10 +12,10 @@
           <div style="margin-top: 30px;">
             <!-- <img src="/static/regisbtn.png" class="regisbtn"/> -->
             <a href="https://register.unzip.events">
-            <button class="regisbtn">
+            <div class="regisbtn d-flex align-items-center justify-content-center">
               <p class="regisbtntxt">{{ $t("message.btn.regis") }}</p>
               <!-- <p  style="font-size: 15px; margin: 0;">ลงทะเบียน</p> -->
-              </button>
+              </div>
             </a>
           </div>
         </div>
@@ -207,15 +207,21 @@ body{
   border-radius: 10000000px;
   border-color: #43445C !important;
   border-width: 5px;
+  border: solid;
   transition-duration: 0.3s;
 }
 .regisbtntxt {
   font-size: 25px;
   margin: 0px;
+  text-decoration: none;
+}
+.regisbtntxt:hover {
+  text-decoration: none;
 }
 .regisbtn:hover {
   transform: scale(1.15);
   border-color: #DEE3EA !important;
+    text-decoration: none;
 }
 .regisbtn:active {
   border-color: #DEE3EA !important;
@@ -271,4 +277,7 @@ body{
   animation-name: fadeInUp;
 }
 
+a:hover{
+  text-decoration: none !important;
+}
 </style>
