@@ -75,6 +75,14 @@ export default {
       spon5:{
         name: 'Advanced Analytics Lab',
         description: 'ภาควิชาวิศวกรรมคอมพิวเตอร์',
+      },
+      spon6:{
+        name: 'บริษัท พริเวจ แอป จำกัด',
+        description: 'แอปพลิเคชั่นบัตรสะสมแต้มออนไลน์สำเร็จรูป',
+      },
+      spon7:{
+        name: 'Odd-e (Thailand) Co Ltd',
+        description: 'Building products better and helping others to do so',
       }
     },
     faq: {

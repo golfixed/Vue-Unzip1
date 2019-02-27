@@ -75,6 +75,14 @@ export default {
       spon5:{
         name: 'Advanced Analytics Lab',
         description: 'Computer Engineering Department',
+      },
+      spon6:{
+        name: 'Privage App Co.,Ltd.',
+        description: 'Online Stamp Application',
+      },
+      spon7:{
+        name: 'Odd-e (Thailand) Co Ltd',
+        description: 'Building products better and helping others to do so',
       }
     },
     faq: {

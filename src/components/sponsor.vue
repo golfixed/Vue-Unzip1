@@ -42,6 +42,20 @@
         <h5 class="sp-des">{{ $t("message.sponsor.spon5.description") }}</h5>
       </div>
       </el-carousel-item>
+      <el-carousel-item v-for="item in 1" :key="item">
+      <div class="sponsor d-flex align-items-center justify-content-center flex-column">
+        <img src="/static/sponsor/sponsor_privage.png" class="sp-logo" />
+        <h5 class="sp-name">{{ $t("message.sponsor.spon6.name") }}</h5>
+        <h5 class="sp-des">{{ $t("message.sponsor.spon6.description") }}</h5>
+      </div>
+      </el-carousel-item>
+      <el-carousel-item v-for="item in 1" :key="item">
+      <div class="sponsor d-flex align-items-center justify-content-center flex-column">
+        <img src="/static/sponsor/sponsor_odds.png" class="sp-logo" />
+        <h5 class="sp-name">{{ $t("message.sponsor.spon7.name") }}</h5>
+        <h5 class="sp-des">{{ $t("message.sponsor.spon7.description") }}</h5>
+      </div>
+      </el-carousel-item>
     </el-carousel>
     <!-- <div
       class="row"
