@@ -22,6 +22,9 @@
                   <li>
                     <a href="#" v-scroll-to="'#faq'">{{ $t("message.navbar.col4") }}</a>
                   </li>
+                  <li>
+                    <a href="#" v-scroll-to="'#speakingtopic'">{{ $t("message.navbar.col5") }}</a>
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -51,33 +54,39 @@
             <nav :class="[{'show': hamburger}, 'nav-display']">
               <ul id="navbar-nav">
                 <li class="active">
-                  <a href="#" v-scroll-to="'#regis'">
+                  <a href="#" v-scroll-to="'#regis'" v-on:click="toggle()">
                     <mdb-icon far icon="edit" style="margin-right: 10px;"/>
                     {{ $t("message.navbar.regis") }}
                   </a>
                 </li>
                 <li>
-                  <a href="#" v-scroll-to="'#timetable'">
+                  <a href="#" v-scroll-to="'#timetable'" v-on:click="toggle()">
                     <mdb-icon icon="table" style="margin-right: 10px;"/>
                     {{ $t("message.navbar.col1") }}
                   </a>
                 </li>
                 <li>
-                  <a href="#" v-scroll-to="'#location'">
+                  <a href="#" v-scroll-to="'#location'" v-on:click="toggle()">
                     <mdb-icon icon="map-marker-alt" style="margin-right: 10px;"/>
                     {{ $t("message.navbar.col2") }}
                   </a>
                 </li>
                 <li>
-                  <a href="#" v-scroll-to="'#sponsor'">
+                  <a href="#" v-scroll-to="'#sponsor'" v-on:click="toggle()">
                     <mdb-icon icon="users" style="margin-right: 10px;"/>
                     {{ $t("message.navbar.col3") }}
                   </a>
                 </li>
                 <li>
-                  <a href="#" v-scroll-to="'#faq'">
+                  <a href="#" v-scroll-to="'#faq'" v-on:click="toggle()">
                     <mdb-icon icon="question-circle" style="margin-right: 10px;"/>
                     {{ $t("message.navbar.col4") }}
+                  </a>
+                </li>
+                <li>
+                  <a href="#" v-scroll-to="'#speakingtopic'" v-on:click="toggle()">
+                    <mdb-icon icon="comment-alt" style="margin-right: 10px;"/>
+                    {{ $t("message.navbar.col5") }}
                   </a>
                 </li>
               </ul>
@@ -195,8 +204,13 @@ export default {
   box-shadow: 0 0 0 0 !important;
 }
 @media screen and (max-width: 768px) {
+  .nav-display {
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.5s;
+  }
   .nav-display.show {
-    display: block;
+    max-height: 100vh;
   }
 
   #navbar-nav li {
@@ -284,9 +298,6 @@ button.navbar-toggler {
 @media (max-width: 768px) {
   .golfsearch {
     display: none !important;
-  }
-  .nav-display {
-    display: none;
   }
   .nav-mb-display {
     display: inherit !important;

@@ -1,4 +1,5 @@
 <template>
+<div>
   <p class="txt-description" style="margin-top: 25px;">
     <el-table
       class="table-div"
@@ -15,7 +16,9 @@
       >
       </el-table-column>
     </el-table>
+  <div id="location"></div>
   </p>
+</div>
 </template>
 
 <script>

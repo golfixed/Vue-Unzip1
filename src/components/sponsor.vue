@@ -52,7 +52,9 @@
       <el-carousel-item v-for="item in 1" :key="item">
       <div class="sponsor d-flex align-items-center justify-content-center flex-column">
         <img src="/static/sponsor/sponsor_odds.png" class="sp-logo" />
+
         <h5 class="sp-name">{{ $t("message.sponsor.spon7.name") }}</h5>
+        <div id="faq" />
         <h5 class="sp-des">{{ $t("message.sponsor.spon7.description") }}</h5>
       </div>
       </el-carousel-item>
@@ -129,6 +131,10 @@ export default {
     position: unset !important;
     height: 300px;
   }
+  .el-carousel__container {
+    position: relative;
+    height: 0px !important;
+}
 }
 
 /* TABLET SITE */
@@ -151,6 +157,10 @@ export default {
     position: unset !important;
     height: 300px;
   }
+  .el-carousel__container {
+    position: relative;
+    height: 300px;
+}
 }
 
 .el-carousel__item {

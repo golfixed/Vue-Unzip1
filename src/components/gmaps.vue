@@ -6,7 +6,9 @@
       frameborder="0" 
       style="border:0" 
       allowfullscreen>
+
     </iframe>
+    <div id="sponsor" />
   </div>
 </template>
 

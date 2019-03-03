@@ -22,6 +22,7 @@
     </template>
     <p class="txt-answer">{{ $t("message.faq.question3.a") }}</p>
   </el-collapse-item>
+  <div id="speakingtopic" />
 
   <el-collapse-item name="4">
     <template slot="title">
@@ -29,7 +30,6 @@
     </template>
     <p class="txt-answer">{{ $t("message.faq.question4.a") }}</p>
   </el-collapse-item>
-
 
 </el-collapse>
 </div>
@@ -47,8 +47,10 @@ export default {
   font-family: 'Kanit', sans-serif;
   font-size: 17px;
   color: #434547;
+  transition: all 1s;
 }
 .txt-answer{
+  height: 0vh;
   margin: 10px;
   font-family: 'Kanit', sans-serif;
   font-size: 15px;
