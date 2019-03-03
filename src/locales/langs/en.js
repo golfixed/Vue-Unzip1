@@ -28,13 +28,16 @@ export default {
     sec8: {
       title: 'FAQs'
     },
+    sec9: {
+      title: 'Speaking Topic'
+    },
     navbar:{
       regis: 'Register',
       col1: 'Time Table',
       col2: 'Location',
       col3: 'Sponsors',
       col4: 'FAQs',
-      col5: 'Support'
+      col5: 'Speaking Topic'
     },
     maintxt: {
       date: 'March 16, 2019',
