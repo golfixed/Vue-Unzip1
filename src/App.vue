@@ -31,22 +31,28 @@
       </div>
       <div class="topic-div">
         <textdiv :title="sec4" :description="sec4des"/>
+        <div id="timetable" />
       </div>
       <div class="topic-div fadeInUp" >
-        <textdiv :title="sec5" id="timetable" />
+        <textdiv :title="sec5"/>
         <timetable/>
       </div>
       <div class="topic-div fadeInUp">
-        <textdiv :title="sec6" id="location" />
+        <textdiv :title="sec6"/>
         <gmaps/>
       </div>
       <div class="topic-div sponsor fadeInUp">
-        <textdiv :title="sec7" id="sponsor" />
+        <textdiv :title="sec7"/>
         <sponsor/>
       </div>
       <div class="topic-div fadeInUp">
-        <textdiv :title="sec8" id="faq" />
+        <textdiv :title="sec8"/>
         <faq/>
+
+      </div>
+      <div class="topic-div fadeInUp">
+        <textdiv :title="sec9"  />
+        <speakingtopic/>
       </div>
       <div class="topic-div">
         <div class="row" style="    padding-right: 0px;">
@@ -71,6 +77,7 @@ import textdiv from '@/components/textdiv'
 import gmaps from '@/components/gmaps'
 import sponsor from '@/components/sponsor'
 import faq from '@/components/faq'
+import speakingtopic from '@/components/speakingtopic'
 
 export default {
   name: 'App',
@@ -80,7 +87,8 @@ export default {
     textdiv,
     gmaps,
     sponsor,
-    faq
+    faq,
+    speakingtopic
   },
   computed: {
     sec1: function () {
@@ -119,6 +127,9 @@ export default {
     sec8: function () {
     return this.$t('message.sec8.title')
     },
+    sec9: function () {
+    return this.$t('message.sec9.title')
+    },
   }
 }
 </script>
@@ -128,6 +139,11 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Kanit');
 @import 'bootstrap/dist/css/bootstrap.css';
 @import 'bootstrap-vue/dist/bootstrap-vue.css';
+
+*{
+  outline: 0;
+}
+
 .web-logo{
   width: 60%;
   margin-top: -60px;
