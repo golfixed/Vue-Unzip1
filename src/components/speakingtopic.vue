@@ -1,6 +1,6 @@
 <template>
   <div>
-    <masonry :cols="{default: 4, 1366: 3, 700: 2, 414: 1}" :gutter="{default: '20px', 700: '15px'}">
+    <masonry :cols="{default: 4, 1920: 3, 1366: 3, 800: 1, 414: 1}" :gutter="{default: '20px', 700: '15px'}">
       <card v-for="(topic, index) in topics" :key="index">
         <div class="bg" tabindex="0">
           <div class="topic">

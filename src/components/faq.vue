@@ -3,10 +3,10 @@
 <el-collapse accordion>
 
   <el-collapse-item name="1">
-    <template slot="title">
+    <template slot="title" class="up">
       <p class="txt-question"> {{ $t("message.faq.question1.q") }}</p>
     </template>
-    <p class="txt-answer">{{ $t("message.faq.question1.a") }}</p>
+    <p class="txt-answer down">{{ $t("message.faq.question1.a") }}</p>
   </el-collapse-item>
 
   <el-collapse-item name="2">
@@ -42,19 +42,23 @@ export default {
 </script>
 
 <style scoped>
+.up:hover > .down{
+  height: 100vh;
+  margin: 10px;
+  transition: all 1s;
+}
 .txt-question{
   margin: 10px;
   font-family: 'Kanit', sans-serif;
   font-size: 17px;
   color: #434547;
-  transition: all 1s;
 }
 .txt-answer{
-  height: 0vh;
   margin: 10px;
   font-family: 'Kanit', sans-serif;
   font-size: 15px;
   color: #606266;
+  transition: all 1s;
 }
 .el-collapse-item__header {
 
