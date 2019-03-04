@@ -203,7 +203,7 @@ export default {
   -webkit-box-shadow: 0 0 0 0 !important;
   box-shadow: 0 0 0 0 !important;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .nav-display {
     overflow: hidden;
     max-height: 0;
@@ -261,7 +261,7 @@ button.navbar-toggler {
   height: 38px !important;
   border-color: rgb(160, 160, 160) !important;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .header-div-padding {
     padding: 0px 0px 0px 0px;
   }
@@ -295,7 +295,7 @@ button.navbar-toggler {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .golfsearch {
     display: none !important;
   }
@@ -304,7 +304,7 @@ button.navbar-toggler {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
   .nav-mb-display {
     display: none !important;
   }
