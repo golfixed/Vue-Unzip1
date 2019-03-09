@@ -17,13 +17,13 @@
                     <a href="#" v-scroll-to="'#location'">{{ $t("message.navbar.col2") }}</a>
                   </li>
                   <li>
+                    <a href="#" v-scroll-to="'#faq'">{{ $t("message.navbar.col5") }}</a>
+                  </li>
+                  <li>
+                    <a href="#" v-scroll-to="'#stopic'">{{ $t("message.navbar.col4") }}</a>
+                  </li>
+                  <li>
                     <a href="#" v-scroll-to="'#sponsor'">{{ $t("message.navbar.col3") }}</a>
-                  </li>
-                  <li>
-                    <a href="#" v-scroll-to="'#faq'">{{ $t("message.navbar.col4") }}</a>
-                  </li>
-                  <li>
-                    <a href="#" v-scroll-to="'#speakingtopic'">{{ $t("message.navbar.col5") }}</a>
                   </li>
                 </ul>
               </nav>
@@ -44,7 +44,7 @@
           <nav class="nav-mb-display p-2">
             <div>
               <button class="btn hamburgerbtn" v-on:click="toggle()" type="button">
-                <mdb-icon icon="ellipsis-h"/>
+                <mdb-icon icon="ellipsis-h" style="    font-size: 1.25rem;"/>
               </button>
             </div>
           </nav>
@@ -72,21 +72,21 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#" v-scroll-to="'#sponsor'" v-on:click="toggle()">
-                    <mdb-icon icon="users" style="margin-right: 10px;"/>
-                    {{ $t("message.navbar.col3") }}
+                  <a href="#" v-scroll-to="'#faq'" v-on:click="toggle()">
+                    <mdb-icon icon="comment-alt" style="margin-right: 10px;"/>
+                    {{ $t("message.navbar.col5") }}
                   </a>
                 </li>
                 <li>
-                  <a href="#" v-scroll-to="'#faq'" v-on:click="toggle()">
+                  <a href="#" v-scroll-to="'#stopic'" v-on:click="toggle()">
                     <mdb-icon icon="question-circle" style="margin-right: 10px;"/>
                     {{ $t("message.navbar.col4") }}
                   </a>
                 </li>
                 <li>
-                  <a href="#" v-scroll-to="'#speakingtopic'" v-on:click="toggle()">
-                    <mdb-icon icon="comment-alt" style="margin-right: 10px;"/>
-                    {{ $t("message.navbar.col5") }}
+                  <a href="#" v-scroll-to="'#sponsor'" v-on:click="toggle()">
+                    <mdb-icon icon="users" style="margin-right: 10px;"/>
+                    {{ $t("message.navbar.col3") }}
                   </a>
                 </li>
               </ul>
@@ -170,10 +170,7 @@ export default {
   padding-right: 11px;
 }
 .hamburgerbtn {
-  border: solid;
   color: white;
-  border-width: 1px;
-  border-color: rgb(106, 106, 173);
   border-radius: 10000px;
   background-color: transparent;
   height: 38px;

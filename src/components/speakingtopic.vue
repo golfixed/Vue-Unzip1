@@ -1,7 +1,7 @@
 <template>
   <div>
     <masonry :cols="{default: 4, 1920: 3, 1366: 3, 800: 1, 414: 1}" :gutter="{default: '20px', 700: '15px'}">
-      <card v-for="(topic, index) in topics" :key="index">
+      <div v-for="(topic, index) in topics" :key="index">
         <div class="bg" tabindex="0">
           <div class="topic">
             <h5 style="margin-bottom: 0px;">{{topic.topic}}</h5>
@@ -13,8 +13,9 @@
             <p style="margin-bottom: 0px;">{{topic.by}}</p>
           </div>
         </div>
-      </card>
+      </div>
     </masonry>
+    <div id="sponsor" />
   </div>
 </template>
 
@@ -221,7 +222,7 @@ export default {
 }
 .bg:focus > .description, .bg:hover > .description {
   max-height: 100vh;
-  padding: 10px 10px;
+  padding: 0px 10px;
 }
 .speaker {
   padding: 10px;

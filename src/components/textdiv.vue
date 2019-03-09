@@ -23,4 +23,12 @@ export default {
   font-size: 17px;
   color: #8E87C0;
 }
+@media screen and (max-width:800px) {
+  .txt-title {
+    text-align: center;
+  }
+  .txt-description {
+    text-align: center;
+  }
+}
 </style>

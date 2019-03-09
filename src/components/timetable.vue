@@ -15,9 +15,12 @@
         :label="activity"
       >
       </el-table-column>
+      
     </el-table>
-  <div id="location"></div>
+
   </p>
+  <div id="location" />
+
 </div>
 </template>
 

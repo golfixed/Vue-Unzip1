@@ -54,7 +54,7 @@
         <img src="/static/sponsor/sponsor_odds.png" class="sp-logo" />
 
         <h5 class="sp-name">{{ $t("message.sponsor.spon7.name") }}</h5>
-        <div id="faq" />
+        
         <h5 class="sp-des">{{ $t("message.sponsor.spon7.description") }}</h5>
       </div>
       </el-carousel-item>
