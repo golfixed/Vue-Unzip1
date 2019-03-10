@@ -79,7 +79,7 @@
                 </li>
                 <li>
                   <a href="#" v-scroll-to="'#stopic'" v-on:click="toggle()">
-                    <mdb-icon icon="question-circle" style="margin-right: 10px;"/>
+                    <mdb-icon icon="microphone" style="margin-right: 10px;"/>
                     {{ $t("message.navbar.col4") }}
                   </a>
                 </li>

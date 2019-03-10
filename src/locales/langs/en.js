@@ -10,29 +10,35 @@ export default {
     },
     sec3: {
       title: 'Want to become a speaker in UNZIP?',
-      description: 'We are accepting proposals for the topic until Feb 26, 2019. The proposed topic must not be contrary to the law or in high risk to become so. The speaker must be able to cover the topic in 25 minutes speaking time. The speaker can speak in either Thai or English.'
+      description: 'We are accepting proposals for the topic until Feb 26, 2019. The proposed topic must not be contrary to the law or in high risk to become so. The speaker must be able to cover the topic in 20 minutes speaking time. The speaker can speak in either Thai or English.'
     },
     sec4: {
       title: 'Who can attend this event?',
       description: 'All KMUTT students, staffs and everyone who are interested in this event.'
     },
     sec5: {
-      title: 'Time Table'
+      title: 'Timetable',
+      title2: ''
     },
     sec6: {
-      title: 'Location'
+      title: 'Location',
+      title2: ''
     },
     sec7: {
-      title: 'Sponsors'
+      title: 'Sponsors',
+      title2: ''
     },
     sec8: {
-      title: 'FAQs'
+      title: 'FAQs',
+      title2: ''
     },
     sec9: {
-      title: 'Speaking Topic'
+      title: 'Speaking Topic',
+      title2: ''
     },
     sec10: {
-      title: 'Guest Speaker'
+      title: 'Guest Speaker',
+      title2: ''
     },
     navbar:{
       regis: 'Register',
@@ -108,6 +114,11 @@ export default {
         q: 'Q: What topic are speakable?',
         a: 'A: Any interesting topic that you are interested. It doesn\'t have to be someting only related to technology.'
       }
+    },
+    location: {
+      room: 'Room CB2401',
+      building: 'Classroom Building 2(CB2)',
+      location: 'King Mongkut\'s University of Technology Thonburi' 
     }
   }
 }

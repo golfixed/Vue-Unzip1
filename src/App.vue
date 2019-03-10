@@ -1,5 +1,6 @@
 <template>
 <body class="container-fluid main-body">
+  <div id="background_wrap">
   <navbar/>
   <div id="regis" class="container">
     <div class="row d-flex align-items-center justify-content-center home">
@@ -34,28 +35,28 @@
       <div id="timetable"/>
     </div>
     <div class="topic-div fadeInUp">
-      <textdiv :title="sec5"/>
+      <textdiv :title="sec5" :title2="sec5_2"/>
       <timetable/>
     </div>
     <div class="topic-div fadeInUp">
-      <textdiv :title="sec6"/>
+      <textdiv :title="sec6" :title2="sec6_2"/>
       <gmaps/>
     </div>
     <div class="topic-div fadeInUp">
-      <textdiv :title="sec8"/>
+      <textdiv :title="sec8" :title2="sec8_2"/>
       <faq/>
     </div>
 
     <div class="topic-div fadeInUp">
-      <textdiv :title="sec10"/>
+      <textdiv :title="sec10" :title2="sec10_2"/>
       <guestspeaker/>
     </div>
     <div class="topic-div fadeInUp">
-      <textdiv :title="sec9"/>
+      <textdiv :title="sec9" :title2="sec9_2"/>
       <speakingtopic/>
     </div>
     <div class="topic-div sponsor fadeInUp">
-      <textdiv :title="sec7"/>
+      <textdiv :title="sec7" :title2="sec7_2"/>
       <sponsor/>
     </div>
 
@@ -77,6 +78,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
 </body>
 </template>
@@ -125,6 +127,9 @@ export default {
     sec4: function() {
       return this.$t("message.sec4.title");
     },
+    sec5_2: function() {
+      return this.$t("message.sec5.title2");
+    },
     sec4des: function() {
       return this.$t("message.sec4.description");
     },
@@ -134,17 +139,32 @@ export default {
     sec6: function() {
       return this.$t("message.sec6.title");
     },
+    sec6_2: function() {
+      return this.$t("message.sec6.title2");
+    },
     sec7: function() {
       return this.$t("message.sec7.title");
+    },
+    sec7_2: function() {
+      return this.$t("message.sec7.title2");
     },
     sec8: function() {
       return this.$t("message.sec8.title");
     },
+    sec8_2: function() {
+      return this.$t("message.sec8.title2");
+    },
     sec9: function() {
       return this.$t("message.sec9.title");
     },
+    sec9_2: function() {
+      return this.$t("message.sec9.title2");
+    },
     sec10: function() {
       return this.$t("message.sec10.title");
+    },
+    sec10_2: function() {
+      return this.$t("message.sec10.title2");
     }
   }
 };
@@ -155,6 +175,10 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Kanit");
 @import "bootstrap/dist/css/bootstrap.css";
 @import "bootstrap-vue/dist/bootstrap-vue.css";
+
+::-webkit-scrollbar {
+  display: none;
+}
 
 * {
   outline: 0;
@@ -192,26 +216,32 @@ export default {
   width: 100%;
 }
 
-body {
-  background-image: url(/static/BG/mainbg.png);
-  background-color: rgb(31, 25, 60);
-  background-size: 100%;
-  background-position: top center;
-  background-attachment: scroll;
-  background-repeat: no-repeat;
-  /* background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat; */
-}
-@media (max-width: 425px) {
-  body {
-    background-image: url(/static/BG/mobile-bg.png);
-    background-color: rgb(36, 16, 74);
+#background_wrap {
+    z-index: -1;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
     background-size: 100%;
-    background-position: top center;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-  }
+    background-image: url('/static/BG/mainbg.png');
+    background-attachment: fixed;
+}
+
+@media (max-width: 425px) {
+
+  #background_wrap {
+    z-index: -1;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    background-image: url('/static/BG/mobile-bg.png');
+    background-attachment: fixed;
+}
+  
 }
 .main-body {
   width: 100%;

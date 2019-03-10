@@ -51,8 +51,7 @@
             </a>
           </div>
         </div>
-      </div> -->
-
+      </div>-->
     </div>
   </div>
 </template>
@@ -71,12 +70,8 @@ export default {
 .socialbtn {
   padding: 10px 15px;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: rgb(77, 77, 77);
-  transition: all 0.3s;
-}
-.socialbtn:hover {
-  transform: scale(1.25);
 }
 .sicon {
   color: rgb(133, 133, 133);
@@ -104,7 +99,7 @@ export default {
 
 @media screen and (max-width: 425px) {
   .topic {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
   .name {
     font-size: 1rem;
@@ -115,7 +110,9 @@ export default {
   border-radius: 20px;
   overflow: hidden;
   padding: 0px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
+
 .img1 {
   background: url("/static/guests/pau.jpg");
   background-position: top center;

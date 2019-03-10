@@ -1,5 +1,5 @@
 <template>
-<div>
+<div style="  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
   <p class="txt-description" style="margin-top: 25px;">
     <el-table
       class="table-div"

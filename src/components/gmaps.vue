@@ -2,7 +2,7 @@
   <div
     class="row"
     style="overflow: hidden; border-radius: 20px; background-color: white; padding:0px;margin-left: 0px;
-    margin-right: 0px;"
+    margin-right: 0px;   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);"
   >
     <div class="col-xl-8" style="padding:0px;">
       <iframe
@@ -23,10 +23,10 @@
         <mdb-icon icon="map-marker-alt"/>
       </div>
       <div style="text-align: center;">
-        <p style="font-size: 1.25rem; margin:0px; padding:0px;">ห้อง CB2401</p>
+        <p style="font-size: 1.25rem; margin:0px; padding:0px;">{{ $t("message.location.room") }}</p>
         <p style="font-size: 0.9rem; margin:0px; padding:0px; color: rgb(77, 77, 77);"> 
-        <br>อาคารเรียนรวม 2 (CB2)
-        <br>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
+        <br>{{ $t("message.location.building") }}
+        <br>{{ $t("message.location.location") }}
         </p>
       </div>
     </div>

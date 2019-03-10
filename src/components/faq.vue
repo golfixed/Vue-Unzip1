@@ -1,5 +1,5 @@
 <template>
-  <div style="overflow: hidden; border-radius: 20px;">
+  <div style="overflow: hidden; border-radius: 20px;   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
     <el-collapse accordion>
 
       <el-collapse-item name="1">
